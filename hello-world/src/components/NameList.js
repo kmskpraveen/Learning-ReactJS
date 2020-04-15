@@ -30,12 +30,12 @@ function NameList() {
     //         </h2>
     //     </div>
     // ))
-    return <div>{personList}</div>
-    // const names = ['Bruce', 'Clark', 'Diana']
-    // const nameList = names.map(name => <h2>{name}</h2>)
-    // return (
-    //     <div>{nameList}</div>    
-    // ) 
+    // return <div>{personList}</div>
+    const names = ['Bruce', 'Clark', 'Diana', 'Bruce']
+    const nameList = names.map((name,index) => <h2 key={index}>{index} {name}</h2>)
+    return (
+        <div>{nameList}</div>    
+    ) 
     // return (
     //     <div>
     //         <h2>{names[0]}</h2>
